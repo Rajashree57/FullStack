@@ -1,0 +1,51 @@
+<html>
+    <head> <title>Radio Button Tags</title> </head>
+    <body> 
+        <input type="radio"> Email
+        <input type="radio"> Phone
+        <input type="radio"> Mail <br/> <br/>
+
+        <p><strong>1.Radio Button Not a Group </strong><br/> <br/>
+            Practically radio buttons are used in group.
+            So that when one button is selected then the other already get unselected if it was previously selected.
+            In a group of radio buttons, all the radio elements are connected.<br/>
+            Only one button can be selected at a time. 
+            Here is an example where radio buttons are not part of a group.</p> 
+
+        <!-- Not a group ❌-->
+        <input type="radio"> Email 
+        <input type="radio"> Phone
+        <input type="radio"> Mail 
+        
+        <p><strong>2.HTML Radio Group </strong> <br/> <br/>
+            Radio buttons in the above example are not part of any group.
+            A radio group is defined by the name attribute. 
+            When 2 or more radio buttons are in a group they have the same name attribute.
+            When multiple radio buttons are given the same name then it becomes part of a group and when you select any radio button of that group it automatically deselects any other selected button in that group.
+        
+        
+
+        <!-- Group ✅ -->
+        <p><strong> Please select your preferred way to contact </strong></p> <br/>
+        <input type="radio" name="contact"> Email
+        <input type="radio" name="contact"> Phone
+        <input type="radio" name="contact"> Message <br/> <br/>
+
+        <p><strong><b>3.Radio Button Value</b></strong> <br/> <br/>
+            All radio buttons shown above have no value. <br/> <br/>
+            This means if you select one then they don't know for what value you want to select it.
+            Just an option written in front of it doesn't mean it will take it as input.
+            To specify value for radio button give it a value attribute. <br/> <br/>
+
+            <!-- Example <input type="radio" value="email" -->
+
+            <!-- Radio button with value -->
+        <input type="radio" name="contact" value="email"> Email
+        <input type="radio" name="contact" value="phone"> Phone
+        <input type="radio" name="contact" value="message"> Message
+
+        </p>
+
+        
+    </body>
+</html>
