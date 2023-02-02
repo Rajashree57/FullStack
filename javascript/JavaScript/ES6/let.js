@@ -16,3 +16,7 @@ function greet() {
 // variable a cannot be used here
 
 greet();
+// n the above program, the variable a is declared inside the function and it can be accessed anywhere inside the function (a becomes function scoped).
+//However the variable b is declared inside the if block statement.
+// b will be block-scoped and can only be accessed inside the if block.
+// Hence when you try to access b outside of if block, an error occurs 
