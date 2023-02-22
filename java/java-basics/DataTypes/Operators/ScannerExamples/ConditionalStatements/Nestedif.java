@@ -12,3 +12,4 @@ public class Nestedif {
         }
     }
 }
+// if statements inside other if statements are called nested if statements.
